@@ -1,0 +1,15 @@
+def prime(num):
+    flag = False
+    if num>1:
+        for i in range(2,int(num**1/2)+1):
+            if num%1==0:
+                flag = True
+                break
+    if flag==True:
+        num = "false"
+    else:
+        num = "true"
+    return num
+
+print(prime(10))
+print(prime(20))
